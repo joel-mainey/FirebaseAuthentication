@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuthenticationTesting2.MVVM.ViewModels.LoginFormView">
+    
+    <!-- Content view of the login UI and bindings -->
+    <VerticalStackLayout Margin="10">
+        <Label Text="Email" />
+        <Entry Margin="10" Text="{Binding Email}" />
+
+        <Label Text="Password" />
+        <Entry Margin="10" IsPassword="True" Text="{Binding Password}" />
+
+        <Button Margin="10" Text="Login" Command="{Binding LoginService}" />
+    </VerticalStackLayout>
+</ContentView>
