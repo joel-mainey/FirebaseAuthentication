@@ -1,4 +1,6 @@
-﻿namespace AuthenticationTesting2
+﻿using AuthenticationTesting2.MVVM.Views;
+
+namespace AuthenticationTesting2
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

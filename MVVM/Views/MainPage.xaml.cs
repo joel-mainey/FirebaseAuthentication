@@ -14,6 +14,6 @@ public partial class MainPage : ContentPage
     //Navigates from mainpage to login page
     private async void btnLogin_Clicked(object sender, EventArgs e)
     {
-        //await Navigation.PushAsync(new LoginView(BindingContext));
+        await Navigation.PushAsync(new LoginView());
     }
 }

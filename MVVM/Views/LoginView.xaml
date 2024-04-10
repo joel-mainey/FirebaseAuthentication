@@ -2,14 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AuthenticationTesting2.MVVM.Views.LoginView"
-             xmlns:loginfeature="clr-namespace:AuthenticationTesting2.MVVM.ViewModels"
+             xmlns:viewmodel="clr-namespace:AuthenticationTesting2.MVVM.ViewModels"
              Title="Login">
-    <!-- Current root page -->
+    <!-- Set the BindingContext of the view to an instance of the LoginViewModel -->
+    <ContentPage.BindingContext>
+        <viewmodel:LoginViewModel />
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout Padding="25" MaximumWidthRequest="600">
-            <!-- Binds loginFormView content view to the LoginView content page -->
-            <loginfeature:LoginFormView Margin="20" BindingContext="{Binding LoginFormViewModel}" />
+            <Label Text="Email" />
+            <Entry Margin="10" Text="{Binding Users.Emails}" />
+
+            <Label Text="Password" />
+            <Entry Margin="10" IsPassword="True" Text="{Binding Users.Password}" />
+
+            <Button Margin="10" Text="Login" Command="{Binding LoginService}" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
