@@ -2,12 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AuthenticationTesting2.MVVM.Views.LoginView"
-             xmlns:viewmodel="clr-namespace:AuthenticationTesting2.MVVM.ViewModels"
              Title="Login">
-    <!-- Set the BindingContext of the view to an instance of the LoginViewModel -->
-    <ContentPage.BindingContext>
-        <viewmodel:LoginViewModel />
-    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout Padding="25" MaximumWidthRequest="600">
