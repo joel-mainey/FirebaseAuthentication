@@ -1,8 +1,4 @@
 using AuthenticationTesting2.MVVM.ViewModels;
-using Firebase.Auth;
-using AuthenticationTesting2.MVVM.Services;
-using Firebase.Auth.Providers;
-using AuthenticationTesting2.MVVM.Models;
 
 namespace AuthenticationTesting2.MVVM.Views;
 

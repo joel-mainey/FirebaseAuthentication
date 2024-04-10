@@ -20,7 +20,7 @@ namespace AuthenticationTesting2.MVVM.Models
             AuthDomain = "hukutaia-domain.firebaseapp.com",
             Providers = new FirebaseAuthProvider[]
         {
-            // Provider for email authentication
+           // Provider for email authentication
            new EmailProvider()
         }
         });
