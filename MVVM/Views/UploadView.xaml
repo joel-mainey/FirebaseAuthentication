@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuthenticationTesting2.MVVM.Views.UploadView"
+             Title="Upload">
+
+    <ScrollView>
+        <Grid
+            RowDefinitions="*"
+            ColumnDefinitions="*"
+            RowSpacing="0">
+
+            <VerticalStackLayout Grid.Row="0">
+                <Entry Text="{Binding Upload.Name}" Placeholder="Name" x:Name="NameEntry" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+                <Entry Text="{Binding Upload.Authority}" Placeholder="Authority" x:Name="AuthorityEntry" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+                <Entry Text="{Binding Upload.Family}" Placeholder="Family" x:Name="FamilyEntry" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+                <Entry Text="{Binding Upload.Description}" Placeholder="Description" x:Name="DescriptionEntry" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+                <Entry Text="{Binding Upload.Latitude}" Placeholder="Latitude" x:Name="LatitudeEntry" Keyboard="Numeric" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+                <Entry Text="{Binding Upload.Longitude}" Placeholder="Longitude" x:Name="LongitudeEntry" Keyboard="Numeric" Margin="10" HeightRequest="50" MaximumWidthRequest="380" FontSize="16" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="313"/>
+
+                <Button Command="{Binding PickImageCommand}" x:Name="btn_pickImage" CornerRadius="10" FontSize="20" BackgroundColor="DodgerBlue" MaximumWidthRequest="380" Text="Pick Image" Margin="20" />
+
+                <Button Command="{Binding UploadImageCommand}" x:Name="btn_uploadImage" CornerRadius="10" FontSize="20" BackgroundColor="DodgerBlue" MaximumWidthRequest="380" Text="Upload Image" Margin="20" />
+
+                <Button Command="{Binding CreateCommand}" x:Name="btn_Create" CornerRadius="10" FontSize="20" BackgroundColor="#0ACF83" MaximumWidthRequest="380" Text="Create" Margin="20" />
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

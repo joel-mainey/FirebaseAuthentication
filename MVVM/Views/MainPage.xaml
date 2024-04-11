@@ -21,6 +21,22 @@
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Margin="10"/>
+
+            <Button x:Name="btnUpload"
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        WidthRequest="122" 
+                        HeightRequest="39" 
+                        CornerRadius="10" 
+                        BackgroundColor="Black" 
+                        TextColor="White"
+                        FontFamily="PoppinsRegular"
+                        FontSize="14"
+                        Text="Admin Upload"
+                        Clicked="btnUpload_Clicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="10"/>
         </VerticalStackLayout>
     </ScrollView>
 

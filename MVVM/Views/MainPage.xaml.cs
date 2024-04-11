@@ -16,4 +16,10 @@ public partial class MainPage : ContentPage
     {
         await Navigation.PushAsync(new LoginView());
     }
+
+    //Navigates from mainpage to upload page
+    private async void btnUpload_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new UploadView());
+    }
 }
